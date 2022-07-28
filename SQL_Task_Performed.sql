@@ -2,7 +2,7 @@
 -- Ans --> TRUE
 
 --2) -->  Identity errors in the following statement: SELECT employee_id, last_name, sal*12 ANNUAL SALARY FROM employees;
--- Ans ------->	SALARY must use instead of sal and error in aliasing, correct query can be write like this...
+-- Note ------>	SALARY must use instead of sal and error in aliasing, correct query can be write like this...
 -- Solution --> SELECT employee_id, last_name, SALARY*12 [ANNUAL SALARY] FROM employees;
 
 --3) -->  Write a query to determine the structure of the table 'DEPARTMENTS'
@@ -23,7 +23,7 @@ inner join JOBS
 on JOBS.JOB_ID = [employee table].JOB_ID
 group by JOBS.JOB_TITLE;
 
---7) --> The HR department needs to find the names and hire dates of all employees who were hired before their managers, along with their managers’ names and hire dates.
+--7) --> The HR department needs to find the names and hire dates of all employees who were hired before their managers, along with their managersâ€™ names and hire dates.
 select e1.FIRST_NAME AS [EMPLOYEE NAME], e2.FIRST_NAME AS [MANAGER NAME], e1.HIRE_DATE as [EMPLOYEE DATE], e2.HIRE_DATE as [MANAGER DATE]
 from [employee table] as e1
 inner join [employee table] as e2
