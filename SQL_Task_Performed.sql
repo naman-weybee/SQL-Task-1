@@ -2,7 +2,7 @@
 -- Ans --> TRUE
 
 --2) -->  Identity errors in the following statement: SELECT employee_id, last_name, sal*12 ANNUAL SALARY FROM employees;
--- Note ------->	SALARY must use instead of sal and error in aliasing, correct query can be write like this...
+-- Note ------>	SALARY must use instead of sal and error in aliasing, correct query can be write like this...
 -- Solution --> SELECT employee_id, last_name, SALARY*12 [ANNUAL SALARY] FROM employees;
 
 --3) -->  Write a query to determine the structure of the table 'DEPARTMENTS'
