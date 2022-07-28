@@ -6,7 +6,7 @@
 -- Solution --> SELECT employee_id, last_name, SALARY*12 [ANNUAL SALARY] FROM employees;
 
 --3) -->  Write a query to determine the structure of the table 'DEPARTMENTS'
-select * from DEPARTMENTS;
+exec sp_help 'dbo.DEPARTMENTS';
 
 --4) -->  Write a query to determine the unique Job IDs from the EMPLOYEES table.
 select distinct JOB_ID
